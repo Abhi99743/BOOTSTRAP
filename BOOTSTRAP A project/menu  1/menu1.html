@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .main {
+            background-color: #211f20;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #211f20;
+            padding: 15px;
+            gap: 40px;
+            width: max-content;
+            width: 100%;
+
+        }
+
+        .head1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .head1 a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .head2 {
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 5px;
+        }
+
+        .head2 .btn1 {
+            background-color: #da592f;
+            color: white;
+            border-radius: 50px;
+            padding: 17px;
+            font-size: 20px;
+            width: 200px;
+            border: none;
+        }
+
+        .cc:hover {
+            background-color: #da592f;
+            color: white;
+            padding: 10px;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: #da592f;
+        }
+
+        .a {
+
+            text-align: center;
+            position: relative;
+            padding-top: 530px;
+
+        }
+
+        .aa {
+            font-size: 100px;
+            color: white;
+            margin: 0px;
+
+        }
+
+        .a1 {
+            font-size: 20px;
+            color: #da592f;
+
+        }
+
+        .a2 {
+            position: absolute;
+        }
+
+        .a3 {
+            background-color: #211f20;
+            padding-top: 100px;
+
+        }
+
+        .b {
+            padding-top: 100px;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .b1 {
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+
+        .b2 {
+            font-size: 50px;
+            color: white;
+        }
+
+        .bb {
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .b3 {
+            display: flex;
+            color: white;
+            gap: 30px;
+            padding-top: 30px;
+
+        }
+
+        .b4 {
+            border-radius: 20px;
+        }
+
+        .c {
+            background-color: #da592f;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .c1 {
+            font-size: 60px;
+
+        }
+
+        .cc {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 100px;
+        }
+
+        .c2 {
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+
+
+        .c3 {
+            display: flex;
+            gap: 30px;
+            padding-top: 30px;
+            align-items: center;
+        }
+
+        .d {
+            background-color: #211f20;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+        .d1 {
+            font-size: 60px;
+        }
+
+        .dd {
+            display: flex;
+            gap: 30px;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+
+        .d2 {
+            gap: 20px;
+            display: flex;
+            padding-top: 50px;
+            align-items: center;
+        }
+
+        .d3 {
+            border-radius: 20px;
+
+            align-items: center;
+        }
+
+        .ddd {
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+
+        .an {
+            background-color: #da592f;
+            color: white;
+
+            padding: 10px;
+            padding-top: 100px;
+        }
+
+        .an1 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 60px;
+
+        }
+
+        .an2 {
+            font-size: 50px;
+        }
+
+        .an3 {
+            background-color: #da592f;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 20px;
+            padding-top: 20px;
+            width: 80%;
+        }
+
+        .an4 {
+            align-items: center;
+        }
+
+        .an5 {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        .an7 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .an88 {
+            color: black;
+        }
+
+        .an9 {
+            padding-top: 5px;
+        }
+
+        .ao {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .ap {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .app {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:1100px) {
+            .btn1 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .head1 {
+                display: none;
+            }
+
+            .cc {
+                flex-direction: column;
+            }
+
+            .c3 {
+                flex-direction: column;
+            }
+
+            .c2 {
+                width: 100%;
+            }
+
+            .dd {
+                flex-direction: column;
+            }
+
+            .d2 {
+                flex-direction: column;
+            }
+
+            .ddd {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .aa {
+                display: none;
+            }
+
+            .a1 {
+                display: none;
+            }
+
+            .bb {
+                flex-direction: column;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .b3 {
+                flex-direction: column;
+            }
+
+            .b1 {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:900px) {
+            .an2 {
+                font-size: 40px;
+            }
+
+            .z8 {
+                height: 70px;
+            }
+
+            .an1 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .ao {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .an6 {
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .z {
+                padding-top: 50px;
+            }
+
+            .an7 {
+                text-align: center;
+                justify-content: center;
+
+            }
+
+            .an9 {
+                text-align: center;
+            }
+
+            .an88 {
+                text-align: center;
+            }
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: #da592f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header fixed-top">
+            <div class="head">
+                <img src="./663a10a0566f60b0d06f3af6_logos (1).svg">
+            </div>
+            <div class="head1">
+                <a href="">Home</a>
+                <a href="./pag1/1page.html">About Us</a>
+
+                <a href="">pagesh</a>
+                <a href="./page 2/page2.html">Blog</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="head2" style="color: white;">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+                <button type="button" class="btn1">BOOK A TABLE</button>
+            </div>
+        </div>
+
+        <div class="a3">
+
+            <img class="a2" src="./66139936e155eff203ff7b8f_Mask group.jpg" height="600px" width="99%" alt="">
+
+            <div class="a">
+                <h1 class="aa">Fresh Vibes</h1>
+
+                <p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="b">
+            <img class="" src="./661cd7dc533d0a6b184399c2_section-image-primary.svg" alt="">
+            <h1 class="b2">Tasty Beginnings Starter</h1>
+            <div class="bb">
+                <div>
+                    <img class="b1" src="./66360d24eee491abaa169f35_first-menu (2).jpg" alt="">
+                </div>
+                <div>
+                    <div class="b3">
+                        <div>
+                            <img class="b4" src="./66349b73e026ab0108878ab0_117 (5).jpg" height="100px" alt="">
+                        </div>
+                        <div>
+                            <h2>menu five French Toast _________ $150.00 USB</h2>
+                            <p>The process begins with selecting.</p>
+                        </div>
+                    </div>
+
+                    <div class="b3">
+                        <div>
+                            <img class="b4" src="./66348c0f4e0cdc174e0d74d5_117 (4).jpg" height="100px" alt="">
+                        </div>
+                        <div>
+                            <h2>Spanish Omelette ________________ $50.00 USB</h2>
+                            <p>The process begins with selecting.</p>
+                        </div>
+                    </div>
+
+                    <div class="b3">
+                        <div>
+                            <img class="b4" src="./66348c4634d1b4d16912c9f4_117 (7).jpg" height="100px" alt="">
+                        </div>
+                        <div>
+                            <h2>Grek Yogurt _____________________ $300.00 USB</h2>
+                            <p>The process begins with selecting.</p>
+                        </div>
+                    </div>
+
+                    <div class="b3">
+                        <div>
+                            <img class="b4" src="./66348cd30543e8f52319fcdc_117 (10).jpg" height="100px" alt="">
+                        </div>
+                        <div>
+                            <h2>Avocado Toast __________________ $150.00 USB</h2>
+                            <p>The process begins with selecting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="c">
+
+        <img src="./6618d0c0a17011509b50e5fe_section-image.svg" alt="">
+        <h1 class="c1">Food Delight Discovery</h1>
+
+        <div class="cc">
+            <div>
+                <img class="c2" src="./66360d24a135ea162d4286f4_first-menu (1).jpg" alt="">
+            </div>
+            <div>
+                <div class="c3">
+                    <div>
+                        <img src="./66347f1d4e6d24094c0cf13e_230 (1).png" height="150px" alt="">
+                    </div>
+                    <div>
+                        <h2>Duck Salad _________ $ 150.00 USD</h2>
+                        <p>Duck salad is a delightful dish that combines tender, succulent pieces<br> of duck meat with
+                            a
+                            variety of fresh vegetables.</p>
+                    </div>
+                </div>
+
+                <div class="c3">
+                    <div>
+                        <img src="./663480dee357d3557270b984_230 (2).png" height="150px" alt="">
+                    </div>
+                    <div>
+                        <h2>Griled Salmo ________ $ 150.00 USD</h2>
+                        <p>Duck salad is a delightful dish that combines tender, succulent pieces<br> of duck meat with
+                            a
+                            variety of fresh vegetables.</p>
+                    </div>
+                </div>
+
+
+                <div class="c3">
+                    <div>
+                        <img src="./663481ed172bb59ef61b78fe_230 (3).png" height="150px" alt="">
+                    </div>
+                    <div>
+                        <h2>Duck Salad _________ $ 150.00 USD</h2>
+                        <p>Duck salad is a delightful dish that combines tender, succulent pieces<br> of duck meat with
+                            a
+                            variety of fresh vegetables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d">
+        <img class="" src="./661cd7dc533d0a6b184399c2_section-image-primary.svg" alt="">
+        <h1 class="d1">Desserts And Drinks</h1>
+        <div class="dd">
+            <div>
+                <img class="ddd" src="./66360d246bf19d11dde8baea_first-menu (4).jpg" alt="">
+            </div>
+            <div>
+                <div class=" d2 ">
+                    <div>
+                        <img class="d3" src="./66349d9813fb7de5d8ce641f_333 (8).jpg" height="100px" alt="">
+                    </div>
+                    <div>
+                        <h2>Fruitcake ___________________ $ 50.00 USD </h2>
+                        <p>The process begins with selecting.</p>
+                    </div>
+                </div>
+
+                <div class=" d2 ">
+                    <div>
+                        <img class="d3" src="./66349da402ffd0e5887e84dd_333 (9).jpg" height="100px" alt="">
+                    </div>
+                    <div>
+                        <h2>Chocolate Cake ____________ $ 200.00 USD </h2>
+                        <p>The process begins with selecting.</p>
+                    </div>
+                </div>
+
+                <div class=" d2 ">
+                    <div>
+                        <img class="d3" src="./66349db3eb692a2fec8fcc14_333 (7).jpg" height="100px" alt="">
+                    </div>
+                    <div>
+                        <h2>Pan Cake ___________________ $ 50.00 USD </h2>
+                        <p>The process begins with selecting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="an">
+        <div class="an1">
+            <img class="z8" src="./663a10a0543bc7c348f830a4_logos (2).svg" alt="">
+            <h1 class="an2">Whisper To Us About Your Feelings.</h1>
+        </div>
+        <div class="ao">
+            <div>
+                <h3>Newsletter Signup</h3>
+                <div class="an4">
+                    <input class="an3" type="email" id="email" placeholder="Email"> <img
+                        src="./660fdefe0c3dd9b9fdd9750d_footer subscribe image.svg" height="30px" alt="">
+                </div>
+                <div class="an5">
+                    <input type="checkbox" id="name"> I Agree To The Privacy Policy.
+                </div>
+            </div>
+            <div class="an6">
+
+                <h2>Quick Links</h2>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Home</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Style Guide</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">License</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Changelog</p>
+                </div>
+            </div>
+            <div>
+                <h2>Working Hours</h2>
+                <p>Mon - Fri: 7.00am - 6.00pm</p>
+                <p>Sat: 7.00am - 6.00pm</p>
+                <p>Sun: 8.00am - 1.00pm</p>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <p>27 West 24th St New York,NY<br> 10010</p>
+                <p>(08) 8345 1778</p>
+                <p>hello123@gmail.com</p>
+            </div>
+        </div>
+        <div class="ap">
+            <p class="app">© Powered by Webflow created by PeacefulQode.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

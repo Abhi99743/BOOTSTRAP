@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #211f20;
+            padding: 15px;
+            gap: 40px;
+            width: max-content;
+            width: 100%;
+
+        }
+
+        .head1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .head1 a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .head2 {
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 5px;
+        }
+
+        .head2 .btn1 {
+            background-color: #da592f;
+            color: white;
+            border-radius: 50px;
+            padding: 17px;
+            font-size: 20px;
+            width: 200px;
+            border: none;
+        }
+
+        .cc:hover {
+            background-color: #da592f;
+            color: white;
+            padding: 10px;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: #da592f;
+        }
+
+        .a {
+
+            text-align: center;
+            position: relative;
+            padding-top: 530px;
+
+        }
+
+        .aa {
+            font-size: 100px;
+            color: white;
+            margin: 0px;
+
+        }
+
+        .a1 {
+            font-size: 20px;
+            color: #da592f;
+
+        }
+
+        .a2 {
+            position: absolute;
+        }
+
+        .a3 {
+            background-color: #211f20;
+            padding-top: 100px;
+
+        }
+
+        .a4 {
+            border-radius: 400px;
+            text-align: center;
+        }
+
+        .a44 {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .a5 {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .a6 {
+            color: white;
+            font-size: 50px;
+            margin: 0px;
+        }
+
+        .a7 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .am {
+            background-color: #211f20;
+            color: white;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .am1 {
+            padding-left: 550px;
+        }
+
+        .am2 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .am3 {
+            border-radius: 30px;
+        }
+
+        .am4 {
+            padding-top: 30px;
+            font-size: 20px;
+        }
+
+        .am5 {
+            color: #da592f;
+            font-size: 20px;
+        }
+
+        .amm {
+            display: flex;
+            gap: 40px;
+            padding: 10px;
+            padding-top: 50px;
+        }
+
+        .am6 {
+            width: 50%;
+        }
+
+        .an {
+            background-color: #da592f;
+            color: white;
+
+            padding: 10px;
+            padding-top: 100px;
+        }
+
+        .an1 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 60px;
+
+        }
+
+        .an2 {
+            font-size: 50px;
+        }
+
+        .an3 {
+            background-color: #da592f;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 20px;
+            padding-top: 20px;
+            width: 80%;
+        }
+
+        .an4 {
+            align-items: center;
+        }
+
+        .an5 {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        .an7 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .an88 {
+            color: black;
+        }
+
+        .an9 {
+            padding-top: 5px;
+        }
+
+        .ao {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .ap {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .app {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:1100px) {
+            .btn1 {
+                display: none;
+            }
+
+            .am {
+                text-align: center;
+            }
+
+            .am1 {
+                padding: 0px;
+                text-align: center;
+            }
+
+            .amm {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .am6 {
+                text-align: center;
+                padding: 0px;
+                width: 100%;
+
+
+            }
+
+            .am3 {
+                width: 100%;
+                border-radius: 40px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .head1 {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:800px) {
+            .am2 {
+                font-size: 40px;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            .a4 {
+                height: 200px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .an2 {
+                font-size: 40px;
+            }
+
+            .z8 {
+                height: 70px;
+            }
+
+            .an1 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .ao {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .an6 {
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .z {
+                padding-top: 50px;
+            }
+
+            .an7 {
+                text-align: center;
+                justify-content: center;
+
+            }
+
+            .an9 {
+                text-align: center;
+            }
+
+            .an88 {
+                text-align: center;
+            }
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: #da592f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="head">
+            <img src="./663a10a0566f60b0d06f3af6_logos (1).svg">
+        </div>
+        <div class="head1">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+
+            <div class="dropdown">
+
+                <button class="btn text-white dropdown-toggle" type="button" data-toggle="dropdown">Pages</button>
+
+
+
+                <div class="drop1 d-flex">
+                    <div class="dropdown-menu" style="color: white; background-color: #da592f;">
+                        
+                        <a class=" cc dropdown-item" href="#">Home 1</a>
+                        <a class=" cc dropdown-item" href="#">Home 2</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="head2" style="color: white;">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-2-line"></i>
+            <button type="button" class="btn1">BOOK A TABLE</button>
+        </div>
+
+    </div>
+
+    <div class="a3">
+
+        <img class="a2" src="./66139936e155eff203ff7b8f_Mask group.jpg" height="600px" width="99%" alt="">
+
+        <div class="a">
+            <h1 class="aa">Blog</h1>
+
+            <p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+
+        <div class="am">
+            <img class="am1" src="./661cd7dc533d0a6b184399c2_section-image-primary.svg" alt="">
+            <h1 class="am2">Exploring Our Latest Blogs</h1>
+            <div class="amm">
+                <div class="am6">
+                    <img class="am3" src="./6617b4c63b225d11abbfc3d8_thumbnail-blog (1).jpg" width="100%" height="400px"
+                        alt="">
+
+                    <p class="am4">April 8, 2024</p>
+                    <h3 class="z7">Gastronomy Gazette: Savory Stories From <br>Near And Far</h3>
+                    <a class="am5" href="#">READ MORE</a>
+
+                </div>
+                <div class="am7">
+                    <div>
+
+                        <p class="am4">April 8, 2024</p>
+                        <h3 class="z7">The Epicurean Explorer: Diving Into Delectable <br> Discoveries</h3>
+                        <a class="am5" href="#">READ MORE</a>
+                    </div>
+                    <div>
+
+                        <p class="am4">April 8, 2024</p>
+                        <h3 class="z7">The Palate Project: Exploring Taste, Texture, And<br> Technique</h3>
+                        <a class="am5" href="#">READ MORE</a>
+                    </div>
+                    <div>
+
+                        <p class="am4">April 8, 2024</p>
+                        <h3 class="z7">Eating Around The Globe: Delicious Destinations Explored</h3>
+                        <a class="am5" href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="an">
+        <div class="an1">
+            <img class="z8" src="./663a10a0543bc7c348f830a4_logos (2).svg" alt="">
+            <h1 class="an2">Whisper To Us About Your Feelings.</h1>
+        </div>
+        <div class="ao">
+            <div>
+                <h3>Newsletter Signup</h3>
+                <div class="an4">
+                    <input class="an3" type="email" id="email" placeholder="Email"> <img
+                        src="./660fdefe0c3dd9b9fdd9750d_footer subscribe image.svg" height="30px" alt="">
+                </div>
+                <div class="an5">
+                    <input type="checkbox" id="name"> I Agree To The Privacy Policy.
+                </div>
+            </div>
+            <div class="an6">
+
+                <h2>Quick Links</h2>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Home</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Style Guide</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">License</p>
+                </div>
+                <div class="an7">
+                    <img class="an9" src="./download.svg" height="20px" alt="">
+                    <p class="an8">Changelog</p>
+                </div>
+            </div>
+            <div class="z">
+                <h2>Working Hours</h2>
+                <p>Mon - Fri: 7.00am - 6.00pm</p>
+                <p>Sat: 7.00am - 6.00pm</p>
+                <p>Sun: 8.00am - 1.00pm</p>
+            </div>
+            <div class="z">
+                <h2>Contact Us</h2>
+                <p>27 West 24th St New York,NY<br> 10010</p>
+                <p>(08) 8345 1778</p>
+                <p>hello123@gmail.com</p>
+            </div>
+        </div>
+        <div class="ap">
+            <p class="app">© Powered by Webflow created by PeacefulQode.</p>
+        </div>
+    </div>
+</body>
+
+</html>
